@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oferta Exclusiva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-white: #ffffff;
+            --bg-light-green: #f0fdf4;
+            --text-dark: #1a1a1a;
+            --dark-green: #14532d;
+            --gold: #eab308;
+            --accent-green: #16a34a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #e5e7eb; /* Subtle gray outside the mobile container */
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: var(--bg-white);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 25px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .badge-top {
+            background-color: var(--accent-green);
+            color: white;
+            text-align: center;
+            padding: 24px;
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin: 0 -20px;
+        }
+
+        .section-padding {
+            padding: 24px 0;
+        }
+
+        .headline {
+            font-size: 24px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 24px;
+            line-height: 1.25;
+            color: var(--text-dark);
+        }
+
+        .subheadline {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--accent-green);
+            text-align: center;
+            margin-bottom: 24px;
+            line-height: 1.4;
+        }
+
+        .mockup-img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .body-bg-layer {
+            background-color: var(--bg-light-green);
+        }
+
+        .body-text-box {
+            padding: 24px 24px;
+            color: var(--text-dark);
+            text-align: left;
+            margin: 0 -20px;
+        }
+
+        .body-text {
+            font-size: 16px;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-top: 24px;
+            text-align: left;
+        }
+
+        .features-list li {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1.4;
+        }
+
+        .features-list li:last-child {
+            margin-bottom: 0;
+            color: var(--dark-green);
+        }
+
+        .list-icon {
+            font-size: 18px;
+        }
+
+        .author-box {
+            background-color: var(--bg-light-green);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 24px 0;
+            border: 2px solid #dcfce7;
+            line-height: 1.6;
+        }
+
+        .price-section {
+            text-align: center;
+            padding: 24px 0;
+        }
+
+        .old-price {
+            font-size: 18px;
+            color: #6b7280;
+            text-decoration: line-through;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .new-price-wrapper {
+            margin-bottom: 8px;
+        }
+
+        .new-price {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--accent-green);
+            line-height: 1;
+            display: inline-block;
+            animation: goldGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes goldGlow {
+            0% { text-shadow: 0 0 5px rgba(234, 179, 8, 0.1); }
+            100% { text-shadow: 0 0 20px rgba(234, 179, 8, 0.7), 0 0 35px rgba(234, 179, 8, 0.5); }
+        }
+
+        .price-note {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        /* Adjustments for Wiapy inject if needed */
+        #wiapy_upsell {
+            margin-top: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top Badge -->
+        <div class="badge-top">
+            ⚡ OFERTA EXCLUSIVA, SÓ NESSA TELA
+        </div>
+
+        <div class="section-padding">
+            <!-- Headline -->
+            <h1 class="headline">Espera! Você acabou de aprender a dominar a mesa com o material base de sinuca, mas e ganhar dinheiro com isso você sabe?</h1>
+            
+            <!-- Subheadline -->
+            <p class="subheadline">+100 Dicas de Apostas no Bar para você sair sempre no lucro na sinuca, e ainda tem bônus de apostas em cartas</p>
+
+            <!-- Mockup Image -->
+            <img src="https://res.cloudinary.com/dtcjxw6ax/image/upload/q_auto/f_auto/v1777824976/Book_with_Brazilian_money_202605031316_i9lhxu.jpg" alt="Material de Apostas" class="mockup-img" onerror="this.src='https://placehold.co/800x600/f0fdf4/16a34a?text=Mockup+Apostas+no+Bar'">
+        </div>
+
+        <!-- Body Text Section -->
+        <div class="body-bg-layer body-text-box">
+            <p class="body-text"><strong>Eu mesmo não sabia.</strong> Na minha jornada de jogo tive que aprender na marra como ganhar dinheiro com o que eu sabia fazer.</p>
+            <p class="body-text">Paguei caro por muitas dessas dicas. Aprendi errando, perdi dinheiro que não devia ter perdido. Até entender o que separa <strong style="color:#14532d;">quem ganha consistentemente</strong> de quem fica patrocinando a resenha.</p>
+            <p class="body-text">Juntei tudo que aprendi, toda minha experiência e coloquei aqui. São dicas que eu só consegui pagando por elas, e agora estou passando pra você por muito menos do que me custaram.</p>
+            <p class="body-text" style="font-weight:800; color:#14532d; font-size:17px;">Com o Apostas no Bar você aprende:</p>
+            
+            <!-- Bullet List -->
+            <ul class="features-list">
+                <li>
+                    <span class="list-icon">🎱</span> 
+                    <div style="display:flex; flex-direction:column;">
+                        <span style="font-weight:800; color:#14532d;">Como negociar o mi sem sair no prejuízo</span>
+                        <span style="color:#dc2626; font-size:13px; margin-top:2px; font-weight:600;">Nunca mais comece o jogo na desvantagem</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="list-icon">🎱</span> 
+                    <div style="display:flex; flex-direction:column;">
+                        <span style="font-weight:800; color:#14532d;">Como ler o adversário antes de apostar um centavo</span>
+                        <span style="color:#dc2626; font-size:13px; margin-top:2px; font-weight:600;">Identifique os padrões de quem vai perder o dinheiro</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="list-icon">🎱</span> 
+                    <div style="display:flex; flex-direction:column;">
+                        <span style="font-weight:800; color:#14532d;">A síndrome da última bola com dinheiro na mesa</span>
+                        <span style="color:#dc2626; font-size:13px; margin-top:2px; font-weight:600;">O controle emocional exato para matar a bola final</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="list-icon">🎱</span> 
+                    <div style="display:flex; flex-direction:column;">
+                        <span style="font-weight:800; color:#14532d;">Como sair do bar no lucro consistentemente</span>
+                        <span style="color:#dc2626; font-size:13px; margin-top:2px; font-weight:600;">O sistema validado pelos maiores vencedores</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="list-icon">🃏</span> 
+                    <div style="display:flex; flex-direction:column;">
+                        <span style="font-weight:800; color:#14532d;">Bônus: dicas de apostas em cartas, Truco, Cacheta e Buraco</span>
+                        <span style="color:#dc2626; font-size:13px; margin-top:2px; font-weight:600;">Aumente sua margem de ganhos além da mesa</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Author Box -->
+        <div class="author-box">
+            <p style="font-size:14px; color:#6b7280; margin-bottom:4px;">Desenvolvido por</p>
+            <p style="font-size:18px; font-weight:900; color:#16a34a;">Rafael Matos</p>
+            <p style="font-size:13px; color:#1a1a1a;">Jogador e Instrutor de Sinuca; Participante da LBS; 12+ anos de mesa; mais de 1.100 pessoas já adquiriram esse material e estão ganhando dinheiro no bar</p>
+        </div>
+
+        <!-- Price & CTA Section -->
+        <div class="price-section">
+            <div class="old-price">R$97,90</div>
+            <div class="new-price-wrapper">
+                <div class="new-price">R$47,90</div>
+            </div>
+            <div class="price-note">Pagamento único, só nessa tela</div>
+            
+            <!-- Wiapy Script Provided Excatly as Requested -->
+            <script src="https://wiapy.com/sell/1.0.0/sell.min.js"></script>
+            <div id="wiapy_upsell"></div>
+            <script>
+            initWiapyUpsell({
+                linkUrl: "https://pay.wiapy.com/checkout/undefined",
+                linkText: "SIM, EU ACEITO ESSA OFERTA",
+                styles: {
+                    backgroundColor: "#00d769",
+                    hoverBackgroundColor: "#00b85a",
+                    fontSize: "17px",
+                    borderRadius: "10px"
+                },
+                refusalLinkUrl: "https://wiapy.com/login",
+                refusalLinkText: "Recusar está oferta",
+                refusalLinkColor: "#000000"
+            });
+            </script>
+        </div>
+        <div style="padding-bottom: 24px;"></div>
+    </div>
+</body>
+</html>
+
